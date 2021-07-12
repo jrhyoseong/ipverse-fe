@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/bjx2afl.css" />
     <link rel="stylesheet" href="https://use.typekit.net/bjx2afl.css" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -21,9 +28,11 @@
       })(window, document, "script", "dataLayer", "GTM-5RL6Z98");
     </script>
     <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <!-- <meta name="description" content="Intelectual Property "> -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ipVerse" />
@@ -59,6 +68,7 @@
     </script>
     <script src="common/js/basic_options.js"></script>
   </head>
+
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -69,28 +79,28 @@
         style="display: none; visibility: hidden"
       ></iframe>
     </noscript>
-
     <!-- End Google Tag Manager (noscript) -->
-    <h1 class="blind">IPVERSE</h1>
+
     <header>
       <div class="container">
         <div class="wrap-header">
           <div class="h-it icon_main">
-            <img 
-              width="155" 
-              class="icon_main" 
-              src="/public/images/logo_header.png" 
-              alt="logo-header"
-              onclick="window.scrollTo({top:0,behavior:'smooth'})"
-              >
+              <img 
+                onclick="moveToTop()"
+                width="155" 
+                class="icon_main" 
+                src="/public/images/logo_header.png" 
+                alt="logo-header"
+                >
           </div>
+
           <div class="wrap-btn-nav">
             <img
               id="btnNav"
               class="hamburger-menu"
               src="images/ico_hamger.svg"
               alt="메뉴"
-              style="margin-right: 1.5vh;;"
+              style="margin-right: 1.5vh;"
             />
           </div>
           <nav id="gnb" class="h-it gnb-list">
@@ -117,15 +127,15 @@
       <!------------------------| Section 1 |------------------------>
       <!------------------------------------------------------------->
 
-    <div class="well" id="well">
-      <div class="panel">
+    <div class="well-container" id="well">
+      
+      <div class="panel" >
+        <div id="about">
+        <video muted autoplay loop class="main-bg-intro">
+          <source src="/public/images/bg-intro.mp4" type="video/mp4" />
+        </video>
         <section>
-          <!-- <h2 class="blind">Welcome to IPVERSE</h2> -->
           <div class="main-banner">
-            <!-- <img src="images/banner_04.png" alt="#" /> -->
-            <video muted autoplay loop className="main-bg-intro">
-              <source src="/public/images/bg-intro.mp4" type="video/mp4" />
-            </video>
             <div class="banner-cov po-center">
               <div class="container">
                 <div class="wrap-main-itr">
@@ -150,13 +160,14 @@
           </div>
         </section>
       </div>
+      </div>
 
       <!------------------------------------------------------------->
       <!------------------------| Section 2 |------------------------>
       <!------------------------------------------------------------->
 
       <div class="panel">
-        <section class="main-view" id="about">
+        <section class="main-view" >
           <div class="po-center wrap-tit-sec">
             <div class="s2-title-container">
             <h2 class="s2-title">What's IPVERSE?</h2>
@@ -165,17 +176,29 @@
             <div class="s2-circles-container">
               
               <div class="s2-circle-container">
-                <div class="s2-circle"></div>
+                <div class="s2-circle">
+                  <video muted autoplay>
+                    <source src="/public/images/s2_video_01.mp4" type="video/mp4" />
+                  </video>
+                </div>
                 <h3>IPVERSE WALLET</h3>
               </div>
 
               <div class="s2-circle-container">
-                <div class="s2-circle"></div>
+                <div class="s2-circle">
+                  <video muted autoplay>
+                    <source src="/public/images/s2_video_02.mp4" type="video/mp4" />
+                  </video>
+                </div>
                 <h3>IPVERSE DIGITAL PLATFORM</h3>
               </div>
 
               <div class="s2-circle-container">
-                <div class="s2-circle"></div>
+                <div class="s2-circle">
+                  <video muted autoplay>
+                    <source src="/public/images/s2_video_03.mp4" type="video/mp4" />
+                  </video>
+                </div>
                 <h3>GLOBAL CREATOR</h3>
               </div>
             </div>
@@ -193,8 +216,9 @@
       <!------------------------| Section 3 |------------------------>
       <!------------------------------------------------------------->
 
-      <div class="panel">
-        <section id="network">
+      <div class="panel" >
+        <div id="network">
+        <section>
           <div class="s3-container">
             <h1>NFT</h1>
 
@@ -202,15 +226,13 @@
               
               <div class="s3-first-row-container">
                 <div class="shared-circle s3-first-row-first-circle">
-                  <h3>IPXHOP</h3>
                   <img class="s3-first-row-first-arrow" src="/public/images/arrow-left.png" alt="pointer-left">
                   <img class="s3-first-row-second-arrow" src="/public/images/arrow-down.png" alt="pointer-left">
                 </div>
                 
                 <div class="s3-first-row-second-circle-container">
                   <div class="shared-circle s3-first-row-second-circle">
-                    <h3>IPVERSE CREATOR SUPPORT</h3>
-                    <img class="s3-first-row-second-circle-img" src="/public/images/bg-circle.png" alt="pointer-left">
+                    <img class="s3-first-row-second-circle-img" src="/public/images/s3_img_02.png" alt="pointer-left">
                     
                     <div class="s3-first-row-big-circle-container">
                       <video muted autoplay loop class="s4-video">
@@ -226,17 +248,14 @@
               <div class="s3-second-row-container">
 
                 <div class="shared-circle s3-second-row-first-circle">
-                  <h3>CONTENT CREATOR</h3>
                   <img class="s3-second-row-first-arrow" src="/public/images/arrow-right.png" alt="pointer-left">
                 </div>
 
                 <div class="shared-circle s3-second-row-second-circle">
-                  <h3>NEW IP</h3>
                   <img class="s3-second-row-first-arrow" src="/public/images/arrow-right.png" alt="pointer-left">
                 </div>
 
                 <div class="shared-circle s3-second-row-third-circle">
-                  <h3>USER</h3>
                 </div>
             
               </div>
@@ -244,12 +263,13 @@
           </div>
         </section>
       </div>
+      </div>
 
       <!------------------------------------------------------------->
       <!------------------------| Section 4 |------------------------>
       <!------------------------------------------------------------->
       <div class="panel">
-        <section id="network">
+        <section>
           
           <div class="s4-container">
             
@@ -278,7 +298,7 @@
       <!------------------------------------------------------------->
 
       <div class="panel">
-        <section id="network">
+        <section>
           
           <div class="s5-container">
 
@@ -334,14 +354,13 @@
         </section>
       </div>
 
-     
 
       <!------------------------------------------------------------->
       <!------------------------| Section 6 |------------------------>
       <!------------------------------------------------------------->      
 
       <div class="panel">
-        <section id="network">
+        <section>
           
           <div class="s6-container">
 
@@ -428,10 +447,14 @@
       <!------------------------| Section 7 |------------------------>
       <!------------------------------------------------------------->
       <!-- todo: add arrow animation -->
-      <div class="panel">
-        <section id="roadMap">
+      <div class="panel" >
+        <div id="roadMap">
+        <section>
           
           <div class="s7-container">
+            <video muted autoplay class="s7-video">
+              <source src="/public/images/animated_arrow.mp4" type="video/mp4" />
+            </video>
 
             <h1 class="s7-title">IPVERSE ROADMAP</h1>
 
@@ -469,13 +492,15 @@
 
         </section>
       </div>
+      </div>
 
       <!------------------------------------------------------------->
       <!------------------------| Section 8 |------------------------>
       <!------------------------------------------------------------->
 
-      <div class="panel">
-        <section id="">
+      <div class="panel" >
+        <div id="team">
+        <section>
           
           <div class="s8-container">
 
@@ -530,13 +555,14 @@
 
         </section>
       </div>
+      </div>
 
       <!------------------------------------------------------------->
       <!------------------------| Section 9 |------------------------>
       <!------------------------------------------------------------->
 
       <div class="panel">
-        <section id="">
+        <section>
           
           <div class="s8-container">
 
@@ -617,285 +643,113 @@
       <!------------------------| Section 10 |------------------------>
       <!------------------------------------------------------------->
 
+      <div class="panel">
 
-      <!-- <div class="panel">
-        <section id="team">
-          <div class="tit-sec">
-            <div class="po-center wrap-tit-sec">
-              <h2>
-                IPVERSE
-                <span>TEAM & PARTNER</span>
-              </h2>
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="s10-video-container">
+                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="s10-video-container">
+                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="s10-video-container">
+                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="s10-video-container">
+                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="s10-video-container">
+                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
+
+      </div>
+
+      <!------------------------------------------------------------->
+      <!------------------------| Section 11 |------------------------>
+      <!------------------------------------------------------------->
+
+      <!-- STYLES SHARED WITH "Section 8" and "Section 9" -->
+      <div class="panel">
+        <section>
+          
+          <div class="s8-container">
+
+            <h1 class="s8-title">IPVERSE ADVISOR</h1>
+
+            <div class="s8-cards-container s9-cards-container">
+              
+              <div class="s8-card-container s9-card-container">
+
+                <div class="s8-img-container">
+                  <img src="https://image.flaticon.com/icons/png/512/147/147144.png" class="s8-img" alt="">
+                </div>
+
+                <h1>어윤덕</h1>
+                <h2>인천광역시 정무부시장 행정자치부 의정담당관</h2>
+              </div>
+
+              <div class="s8-card-container s9-card-container">
+
+                <div class="s8-img-container">
+                  <img src="https://image.flaticon.com/icons/png/512/147/147144.png" class="s8-img" alt="">
+                </div>
+
+                <h1>김준배</h1>
+                <h2>서울 서부지방 검찰청 검사 법무법인 대륙아주 파트너 변호사</h2>
+              </div>
+
+              <div class="s8-card-container s9-card-container">
+
+                <div class="s8-img-container">
+                  <img src="https://image.flaticon.com/icons/png/512/147/147144.png" class="s8-img" alt="">
+                </div>
+
+                <h1>김병걸</h1>
+                <h2>한국을 빛낸 한국인상 수상 13회 대한민국 전통가요대상 적사부문 대상</h2>
+              </div>
+
+              <div class="s8-card-container s9-card-container">
+
+                <div class="s8-img-container">
+                  <img src="https://image.flaticon.com/icons/png/512/147/147144.png" class="s8-img" alt="">
+                </div>
+
+                <h1>김맹룡</h1>
+                <h2>대전지방노동청장 서울지방노동위원회 위원장</h2>
+              </div>
+            </div>
+
           </div>
 
-          <div class="container">
-            <div class="wrap-cards">
-              <div class="tit-cards">
-                <p>TEAM</p>
-              </div>
-
-              <div class="card-list card-list-1">
-                <div class="card-item te-item-1">
-                  <img src="images/te_card_01.png" alt="#" />
-                </div>
-                <div class="card-item te-item-2">
-                  <img src="images/te_card_02.png" alt="#" />
-                </div>
-                <div class="card-item te-item-3">
-                  <img src="images/te_card_03.png" alt="#" />
-                </div>
-              </div>
-            </div>
-
-            <div class="wrap-cards">
-              <div class="tit-cards">
-                <p>ADVISOR</p>
-              </div>
-
-              <div class="card-list card-list-2">
-                <div class="card-item ad-item-6">
-                  <img src="images/ad_card_01.png" alt="#" />
-                </div>
-                <div class="card-item ad-item-7">
-                  <img src="images/ad_card_02.png" alt="#" />
-                </div>
-                <div class="card-item ad-item-8">
-                  <img src="images/ad_card_03.png" alt="#" />
-                </div>
-                <div class="card-item ad-item-9">
-                  <img src="images/ad_card_04.png" alt="#" />
-                </div>
-                <div class="card-item ad-item-10">
-                  <img src="images/ad_card_05.png" alt="#" />
-                </div>
-                <div class="card-item ad-item-11">
-                  <img src="images/ad_card_06.png" alt="#" />
-                </div>
-                <div class="card-item ad-item-12">
-                  <img src="images/ad_card_07.png" alt="#" />
-                </div>
-                <div class="card-item ad-item-13">
-                  <img src="images/ad_card_08.png" alt="#" />
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
-    </div> -->
-    <!-- <footer>
-      <div class="container">
-        <div class="wrap-footer">
-          <div class="footer-logo">
-            <img src="images/logo_ipverse_footer.svg" alt="IPVERSE" />
-          </div>
-          <address class="footer-txt">
-            IPVERSE FOUNDATION LTD. <br />
-            IPVERSE@IPVERSE.io <br />
-            22 Tak Fung Street Hunghom Kowloon Hong Kong<br />
-            <span>Copyright © IPVERSE. All rights reserved.</span>
-          </address>
-        </div>
-      </div>
-    </footer> -->
-    
-    <!-- <section>
-      <h2 class="blind">Welcome to IPVERSE</h2>
-      <div class="main-banner">
-        <img src="images/banner_04.png" alt="#" />
 
-        <div class="banner-cov po-center">
-          <div class="container">
-            <div class="wrap-main-itr">
-              <img
-                class="main-logo"
-                src="images/logo_ipverse_large.svg"
-                alt="IPVERSE"
-              />
-              <div class="main-description">
-                <div class="wrap-main-description">
-                  <p class="tit-ma">A new paradigm in the IP transaction</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
-    <section class="main-view" id="about">
-      <div class="tit-sec">
-        <div class="po-center wrap-tit-sec">
-          <h2><span>What is</span> IPVERSE?</h2>
-        </div>
-      </div>
-
-      <div class="container p-con-1">
-        <div class="about-main-img txt-auto">
-          <img src="images/ipverse_content.png" alt="#" />
-        </div>
-
-        <div class="itr-text">
-          <div class="wrap-itr-description">
-            <p class="tit-1" id="pcItrText">
-              Innovative ecosystem combining IP x blockchain
-            </p>
-            <p class="tit-1" id="mobileItrText">
-              Innovative ecosystem combining <br />
-              IP x blockchain
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section id="network">
-      <div class="tit-sec">
-        <div class="po-center wrap-tit-sec">
-          <h2>
-            IPVERSE
-            <span>NETWORK</span>
-          </h2>
-        </div>
-      </div>
-
-      <div class="container p-con-1">
-        <div class="wrap-network-content-1">
-          <div class="network-main-img txt-auto">
-            <img src="images/ipverse_network.png" alt="#" />
-          </div>
-          <div class="itr-text">
-            <div class="wrap-itr-description">
-              <p class="tit-1">Actually available Multi cryptocurrency</p>
-              <p class="txt-1">
-                Gaining transparency and reliability through blockchain
-                technology that cannot falsify data.<br />
-                Streamlining the payment process and providing new payment
-                methods available anywhere in the world.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="wrap-network-content-2">
-          <div class="wrap-chart-img txt-auto">
-            <img src="images/ipverse_tokens.png" alt="#" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="roadMap">
-      <div class="tit-sec">
-        <div class="po-center wrap-tit-sec">
-          <h2>
-            IPVERSE
-            <span>ROADMAP</span>
-          </h2>
-        </div>
-      </div>
-
-      <div class="wrap-roadmap p-con-1">
-        <img
-          id="pcRoadMap"
-          class="img-roadmap"
-          src="images/ipverse_roadmap_01.png"
-          alt="#"
-        />
-        <img
-          id="mobileRoadMap"
-          class="img-roadmap"
-          src="images/ipverse_roadmap_02.png"
-          alt="#"
-        />
-      </div>
-    </section> -->
-
-    <!-- <section id="team">
-      <div class="tit-sec">
-        <div class="po-center wrap-tit-sec">
-          <h2>
-            IPVERSE
-            <span>TEAM & PARTNER</span>
-          </h2>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="wrap-cards">
-          <div class="tit-cards">
-            <p>TEAM</p>
-          </div>
-
-          <div class="card-list card-list-1">
-            <div class="card-item te-item-1">
-              <img src="images/te_card_01.png" alt="#" />
-            </div>
-            <div class="card-item te-item-2">
-              <img src="images/te_card_02.png" alt="#" />
-            </div>
-            <div class="card-item te-item-3">
-              <img src="images/te_card_03.png" alt="#" />
-            </div>
-          </div>
-        </div>
-
-        <div class="wrap-cards">
-          <div class="tit-cards">
-            <p>ADVISOR</p>
-          </div>
-
-          <div class="card-list card-list-2">
-            <div class="card-item ad-item-6">
-              <img src="images/ad_card_01.png" alt="#" />
-            </div>
-            <div class="card-item ad-item-7">
-              <img src="images/ad_card_02.png" alt="#" />
-            </div>
-            <div class="card-item ad-item-8">
-              <img src="images/ad_card_03.png" alt="#" />
-            </div>
-            <div class="card-item ad-item-9">
-              <img src="images/ad_card_04.png" alt="#" />
-            </div>
-            <div class="card-item ad-item-10">
-              <img src="images/ad_card_05.png" alt="#" />
-            </div>
-            <div class="card-item ad-item-11">
-              <img src="images/ad_card_06.png" alt="#" />
-            </div>
-            <div class="card-item ad-item-12">
-              <img src="images/ad_card_07.png" alt="#" />
-            </div>
-            <div class="card-item ad-item-13">
-              <img src="images/ad_card_08.png" alt="#" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="wrap-footer">
-          <div class="footer-logo">
-            <img src="images/logo_ipverse_footer.svg" alt="IPVERSE" />
-          </div>
-          <address class="footer-txt">
-            IPVERSE FOUNDATION LTD. <br />
-            IPVERSE@IPVERSE.io <br />
-            22 Tak Fung Street Hunghom Kowloon Hong Kong<br />
-            <span>Copyright © IPVERSE. All rights reserved.</span>
-          </address>
-        </div>
-      </div>
-    </footer> -->
 
     <!-- CDN: chart.js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js" integrity="sha512-5vwN8yor2fFT9pgPS9p9R7AszYaNn0LkQElTXIsZFCL7ucT8zDCAqlQXDdaqgA1mZP47hdvztBMsIoFxq/FyyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
-    <!-- Full page scroll functionality -->
     <script>
-      
       (function () {
         var gnb = document.querySelector("#gnb");
         var btnNav = document.querySelector("#btnNav");
@@ -938,20 +792,26 @@
         var abTop = window.pageYOffset + target.getBoundingClientRect().top;
         var width = screen.width;
 
-        abTop = width >= 1024 ? abTop - 85 : abTop - 40;
+        abTop = width >= 1024 ? abTop - 65 : abTop - 40;
 
         window.scrollTo({
           top: abTop,
-          behavior: "smooth",
+          // behavior: "smooth",
         });
       }
 
-      // FULL PAGE SCROLL
+      function moveToTop(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      }
+    </script>
+
+    <!-- Full page scroll functionality -->
+    <script>
       (function () {
         "use strict";
         /*[pan and well CSS scrolls]*/
-        var pnls = document.querySelectorAll(".panel").length,
-          scdir,
+        var panels = document.querySelectorAll(".panel").length,
+          scrollDirection,
           hold = false;
 
         function _scrollY(obj) {
@@ -973,11 +833,11 @@
           }
           plength = plength || parseInt(pan.offsetHeight / vmin);
           slength = parseInt(pan.style.transform.replace("translateY(", ""));
-          if (scdir === "up" && Math.abs(slength) < plength - plength / pnls) {
+          if (scrollDirection === "up" && Math.abs(slength) < plength - plength / panels) {
             slength = slength - step;
-          } else if (scdir === "down" && slength < 0) {
+          } else if (scrollDirection === "down" && slength < 0) {
             slength = slength + step;
-          } else if (scdir === "top") {
+          } else if (scrollDirection === "top") {
             slength = 0;
           }
           if (hold === false) {
@@ -988,13 +848,13 @@
             }, 1000);
           }
           console.log(
-            scdir +
+            scrollDirection +
               ":" +
               slength +
               ":" +
               plength +
               ":" +
-              (plength - plength / pnls)
+              (plength - plength / panels)
           );
         }
         /*[swipe detection on touchscreen devices]*/
@@ -1048,13 +908,13 @@
                 }
                 if (obj.id === "well") {
                   if (swdir === "up") {
-                    scdir = swdir;
+                    scrollDirection = swdir;
                     _scrollY(obj);
                   } else if (
                     swdir === "down" &&
                     obj.style.transform !== "translateY(0)"
                   ) {
-                    scdir = swdir;
+                    scrollDirection = swdir;
                     _scrollY(obj);
                   }
                   e.stopPropagation();
@@ -1069,10 +929,10 @@
         well.style.transform = "translateY(0)";
         well.addEventListener("wheel", function (e) {
           if (e.deltaY < 0) {
-            scdir = "down";
+            scrollDirection = "down";
           }
           if (e.deltaY > 0) {
-            scdir = "up";
+            scrollDirection = "up";
           }
           e.stopPropagation();
         });
@@ -1081,7 +941,7 @@
         var tops = document.querySelectorAll(".top");
         for (var i = 0; i < tops.length; i++) {
           tops[i].addEventListener("click", function () {
-            scdir = "top";
+            scrollDirection = "top";
             _scrollY(well);
           });
         }
@@ -1135,6 +995,17 @@
             }
           }
       });
+      </script>
+          <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          speed: 700,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
       </script>
   </body>
 </html>
