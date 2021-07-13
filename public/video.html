@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/bjx2afl.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/bjx2afl.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <meta name="description" content="Intelectual Property "> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ipVerse" />
+    <meta property="twitter:title" content="ipVerse" />
+    <meta property="twitter:domain" content="http://ipverse.io" />
+    <meta
+      name="keywords"
+      content="NFT, 엔에프티, ipverse, 아이피벌스, 아이피버스, 아아피, ip, IP, Blockchain, blockchain,
+    BC, bc, 블록체인, Cryptocurrency, cryptocurrency, crypto, Crypto, 암호화폐, 암호,
+    Contents, contents, 컨텐츠, 콘텐츠, 게임, Game, game,  가상화폐, k-pop, K-Pop, 케이팝, 음악, 뮤직, music, MUSIC,
+    미술, Art, art, 미술품, 마켓, Market, market, Trade, 거래"
+    />
+
+    <link rel="stylesheet" href="common/css/reset-01.css" />
+    <link rel="stylesheet" href="common/css/header-01.css" />
+    <link rel="stylesheet" href="css/index-01.css" />
+    <link rel="stylesheet" href="common/css/footer-01.css" />
+
+    <title>IPVERSE</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="wrap-header">
+          <div class="h-it icon_main">
+            <img
+              onclick="moveToTop()"
+              width="155"
+              class="icon_main"
+              src="/public/images/logo_header.png"
+              alt="logo-header"
+            />
+          </div>
+
+          <div class="wrap-btn-nav">
+            <img
+              id="btnNav"
+              class="hamburger-menu"
+              src="images/ico_hamger.svg"
+              alt="메뉴"
+              style="margin-right: 1.5vh"
+            />
+          </div>
+          <nav id="gnb" class="h-it gnb-list">
+            <ul class="wrap-gnb">
+              <li>
+                <a href="index.html#about"> ABOUT </a>
+              </li>
+              <li>
+                <a href="index.html#network"> NETWORK </a>
+              </li>
+              <li>
+                <a href="index.html#roadMap"> ROADMAP </a>
+              </li>
+              <li>
+                <a href="index.html#team"> TEAM </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="well-container" id="well">
+      <!------------------------------------------------------------->
+      <!------------------------| Section 10 |------------------------>
+      <!------------------------------------------------------------->
+
+      <div class="panel">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="s10-video-container">
+                <button onclick="location.href='/public/index.html#team';">
+                  ✕
+                </button>
+                <iframe
+                  src="https://www.youtube.com/embed/R8_veQiYBjI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="s10-video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/R8_veQiYBjI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="s10-video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/R8_veQiYBjI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="s10-video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/R8_veQiYBjI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="s10-video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/R8_veQiYBjI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        speed: 700,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

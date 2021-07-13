@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/bjx2afl.css" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-    <!-- Swiper JS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -236,7 +230,7 @@
                     
                     <div class="s3-first-row-big-circle-container">
                       <video muted autoplay loop class="s4-video">
-                        <source src="/public/images/bg-intro.mp4" type="video/mp4" />
+                        <source src="/public/images/s3-video-logo.mp4" type="video/mp4" />
                       </video>
                     </div>
 
@@ -579,7 +573,7 @@
                 <h1>김문겸</h1>
                 <h2>숭실대학교 중소기업대학원 원장 그로벌 경영학회 학회장</h2>
 
-                <button class="s9-button">
+                <button class="s9-button" onclick="location.href='/public/video.html';">
                   <img src="images/icon_play_sm.png" alt="">
                   PLAY VIDEO
                 </button>
@@ -594,7 +588,7 @@
                 <h1>김용정</h1>
                 <h2>숭실대학교 중소기업대학원 원장</h2>
 
-                <button class="s9-button">
+                <button class="s9-button" onclick="location.href='/public/video.html';">
                   <img src="images/icon_play_sm.png" alt="">
                   PLAY VIDEO
                 </button>
@@ -609,7 +603,7 @@
                 <h1>김덕기</h1>
                 <h2>경북문화재단 부대표 문화예술 본부장</h2>
 
-                <button class="s9-button">
+                <button class="s9-button" onclick="location.href='/public/video.html';">
                   <img src="images/icon_play_sm.png" alt="">
                   PLAY VIDEO
                 </button>
@@ -624,7 +618,7 @@
                 <h1>김승국</h1>
                 <h2>노원문화재단 이사장 수원문화재단 대표이사</h2>
 
-                <button class="s9-button">
+                <button class="s9-button" onclick="location.href='/public/video.html';">
                   <img src="images/icon_play_sm.png" alt="">
                   PLAY VIDEO
                 </button>
@@ -638,50 +632,6 @@
         </section>
       </div>
 
-
-      <!------------------------------------------------------------->
-      <!------------------------| Section 10 |------------------------>
-      <!------------------------------------------------------------->
-
-      <div class="panel">
-
-            <div class="swiper-container mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="s10-video-container">
-                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div class="s10-video-container">
-                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="s10-video-container">
-                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="s10-video-container">
-                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="s10-video-container">
-                    <iframe src="https://www.youtube.com/embed/R8_veQiYBjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-
-      </div>
 
       <!------------------------------------------------------------->
       <!------------------------| Section 11 |------------------------>
@@ -739,8 +689,17 @@
             </div>
 
           </div>
-
         </section>
+
+          <div class="s11-copyright-container">
+            <h3 >&copy; 2021 IPVERSE. All rights reserved.</h3>
+          </div>
+        
+          <div class="s11-footer-container">
+            <h2>IPVERSE FOUNDATION LTD.</h2>
+            <h2>22 Tak Fung Street Hunghom Kowloon Hong Kong</h2>
+          </div>
+
       </div>
 
     </div>
@@ -790,7 +749,7 @@
         var abTop = window.pageYOffset + target.getBoundingClientRect().top;
         var width = screen.width;
 
-        abTop = width >= 1024 ? abTop - 65 : abTop - 40;
+        abTop = width >= 1024 ? abTop - 85 : abTop - 40;
 
         window.scrollTo({
           top: abTop,
@@ -854,18 +813,6 @@
         }
       var ctx = document.getElementById('token-distribution-chart');
       var myChart = new Chart(ctx, data);
-      </script>
-
-      <!-- Swiper.js -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          speed: 700,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
       </script>
 
       <!------------------ Full page scroll functionality -------------->
