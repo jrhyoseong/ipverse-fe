@@ -144,8 +144,8 @@ html {
 }
 body {
   width: 100%;
-  /* overflow-x: hidden; */
-  overflow: hidden;
+  /* todo: enable scroll effect */
+  /* overflow: hidden; */
   margin: 0;
   text-rendering: optimizeLegibility;
 }
